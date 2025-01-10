@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="product.css">
+  
+    <link rel="icon" href="img/Canrich Logo.png" type="image/png">
+    <script src="https://kit.fontawesome.com/a076d05399.js" ></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Products</title>
+</head>
+<body>
+  <header>
+    <nav>
+        <a href="index3.html"><img src="img/Canrich Logo.png" alt="logo" class="logo"></a>
+        <ul>
+          <li><a href="index3.html">HOME</a></li>
+            <li><a href="ProductView.html">PRODUCTS</a></li>
+            <li><a href="new.html">ABOUT US</a></li>
+            <li><a href="new1.html">NEWSLETTER</a></li>
+            <li><a href="login.html">CONTACT US</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div id="mySidenav" class="sidenav">
+  <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel" style="font-size: 30px;">CART</h5>
+          <form action="https://formsubmit.co/user@example.com" method="POST">
+
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="closeNav()">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+
+          <ul id="cart-list" class="show-cart table">
+            <!--cart items-->
+          </ul>
+          <div class="totalPrice">Total price: $<span class="total-cart">0.00</span></div>
+          <input type="hidden" name="TotalBill" id="orderDetails" value="">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="closeNav()">Close</button>
+            <input type="hidden" id="orderDetails" name="orderDetails" value="">
+            <button type="button" class="btn btn-primary" onclick="placeOrder()">Order now</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+    <br><br>
+    <div class="prod-title"><h5>Products</h5></div>
+    <img src="img/Canrich Website Banner BG.png" class="bg-image">
+    <br><br>
+  
+    <div class="container">
+      <div class="card">
+        <figure>
+            <img src="img/Can1.png" alt="can">
+        </figure>
+        <section class="details">
+            <div class="min-details">
+                <h1>Canrich<span>Classic</span></h1>
+                <h1 class="price">$10</h1>
+            </div>
+            <a href="#" class="btn" onclick="addToCart(this); openNav();" data-name="Canrich Classic" data-price="10">Add to Cart</a>
+
+        </section>
+    </div>
+        <div class="card">
+            <figure>
+              <img src="img/Can5.png" alt="can">
+            </figure>
+            <section class="details">
+              <div class="min-details">
+                <h1>Canrich<span>Diet</span></h1>
+                <h1 class="price">$10</h1>
+              </div>
+            <a href="#" class="btn" onclick="addToCart(this); openNav();" data-name="Canrich Diet" data-price="10">Add to Cart</a>
+            </section>
+              </div>
+        <div class="card">
+            <figure>
+              <img src="img/Can3.png" alt="can">
+            </figure>
+            <section class="details">
+              <div class="min-details">
+                <h1>Canrich<span>Energizere</span></h1>
+                <h1 class="price">$10</h1>
+              </div>
+            <a href="#" class="btn" onclick="addToCart(this); openNav();" data-name="Canrich Energizer" data-price="10">Add to Cart</a>
+            </section>
+              </div>
+        <div class="card">
+            <figure>
+              <img src="img/Can4.png" alt="can">
+            </figure>
+            <section class="details">
+              <div class="min-details">
+                <h1>Canrich<span>Force</span></h1>
+                <h1 class="price">$10</h1>
+              </div>
+            <a href="#" class="btn" onclick="addToCart(this); openNav();" data-name="Canrich Force" data-price="10">Add to Cart</a>
+            </section>
+              </div>
+        <div class="card">
+            <figure>
+              <img src="img/Can5.png" alt="can">
+            </figure>
+            <section class="details">
+              <div class="min-details">
+                <h1>Matcha<span>Mint</span></h1>
+                <h1 class="price">$10</h1>
+              </div>
+            <a href="#" class="btn" onclick="addToCart(this); openNav();" data-name="Matcha Mint" data-price="10">Add to Cart</a>
+            </section>
+              </div>
+        <div class="card">
+            <figure>
+              <img src="img/Can1.png" alt="can">
+            </figure>
+            <section class="details">
+              <div class="min-details">
+                <h1>Drink<span>Limited</span></h1>
+                <h1 class="price">$10</h1>
+              </div>
+            <a href="#" class="btn" onclick="addToCart(this); openNav();" data-name="Drink Limited" data-price="10">Add to Cart</a>
+            </section>
+              </div>
+        <div class="card">
+            <figure>
+              <img src="img/Can4.png" alt="can">
+            </figure>
+            <section class="details">
+              <div class="min-details">
+                <h1>Energizer<span>Limited</span></h1>
+                <h1 class="price">$10</h1>
+              </div>
+            <a href="#" class="btn" onclick="addToCart(this); openNav();" data-name="Energizer Limited" data-price="10">Add to Cart</a>
+            </section>
+              </div>
+        <div class="card">
+            <figure>
+              <img src="img/Can3.png" alt="can">
+            </figure>
+            <section class="details">
+              <div class="min-details">
+                <h1>Canrich<span>Limited</span></h1>
+                <h1 class="price">$10</h1>
+              </div>
+            <a href="#" class="btn" onclick="addToCart(this); openNav();" data-name="Canrich Limited" data-price="10">Add to Cart</a>
+            </section>
+              </div>
+        <div class="card">
+            <figure>
+              <img src="img/Can1.png" alt="can">
+            </figure>
+            <section class="details">
+              <div class="min-details">
+                <h1>Drink<span>Limited</span></h1>
+                <h1 class="price">$10</h1>
+              </div>
+            <a href="#" class="btn" onclick="addToCart(this); openNav();" data-name="Drink Limited" data-price="10">Add to Cart</a>
+            </section>
+              </div>
+          </div>
+          
+ 
+    <br><br>
+    <footer class="footer">
+      <div class="container2">
+          <div class="row1">
+              <div class="footer-col">
+                  <a href="index3.html"><img src="img/Canrich Logo.png" class="logo" alt="Footer Logo"></a>
+              </div>
+              <div class="footer-col">
+                  <h4>company</h4>
+                  <ul>
+                      <li><a href="#">about us</a></li>
+                      <li><a href="#">our services</a></li>
+                      <li><a href="#">privacy policy</a></li>
+                      <li><a href="#">affiliate program</a></li>
+                  </ul>
+              </div>
+              <div class="footer-col">
+                  <h4>get help</h4>
+                  <ul>
+                      <li><a href="#">FAQ</a></li>
+                      <li><a href="#">shipping</a></li>
+                      <li><a href="#">returns</a></li>
+                      <li><a href="#">order status</a></li>
+                      <li><a href="#">payment options</a></li>
+                  </ul>
+              </div>
+              <div class="footer-col">
+                  <h4>follow us</h4>
+                  <div class="social-links">
+                      <a href="#"><i class="fab fa-facebook-f"></i></a>
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                      <a href="#"><i class="fab fa-instagram"></i></a>
+                  </div>
+                  
+              </div>
+          </div>
+      </div>
+ </footer>
+    <script>
+      
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+
+const product = {
+  name: "Drink Limited",
+  price: 10
+};
+
+
+function addToCart(element) {
+    openNav();  
+
+    const productName = element.getAttribute('data-name');
+    const productPrice = element.getAttribute('data-price');
+
+    const cartList = document.getElementById("cart-list");
+    const totalCartPrice = document.querySelector(".total-cart");
+
+    
+    const cartItem = document.createElement("li");
+    cartItem.textContent = `${productName} - $${productPrice}`;
+    cartList.appendChild(cartItem);
+
+   
+    const currentTotal = parseFloat(totalCartPrice.textContent.replace("$", ""));
+    const newTotal = currentTotal + parseFloat(productPrice);
+    totalCartPrice.textContent = `${newTotal.toFixed(2)}`;
+  }
+  function placeOrder() {
+    const cartItems = document.querySelectorAll("#cart-list li");
+    let orderDetails = [];
+    let totalCartPrice = document.querySelector(".total-cart").textContent;
+
+    cartItems.forEach(item => {
+        orderDetails.push(item.textContent);
+    });
+
+    localStorage.setItem('orderDetails', orderDetails.join('; '));
+    localStorage.setItem('totalPrice', totalCartPrice);
+
+  
+    window.location.href = 'checkOutPage.html';
+}
+
+
+
+
+    </script>
+   
+    
+</body>
+</html>
